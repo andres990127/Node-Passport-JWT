@@ -6,6 +6,7 @@ const config = {
   port: process.env.PORT || 3000,
   dbUrl: process.env.DATABASE_URL,
   ApiKey: process.env.API_KEY,
+  JwtKey: process.env.JWT_KEY,
 }
 
 module.exports = { config };
