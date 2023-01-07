@@ -13,7 +13,7 @@ const LocalStrategy = new Strategy(async (email, password, done) =>{
         }
         const isMatch = await bcrypt.compare(password, user.password);
         if(!isMatch){
-            done(boom.unauthorized(),false)
+            done(boom.unauthorized('Password incorrect'),false)
         }
         done(null, user);
     } catch (error) {
