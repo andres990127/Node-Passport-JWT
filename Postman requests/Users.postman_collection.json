@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "0e32d816-b2b0-41ac-aab0-8d4a7b3314e2",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14036679"
+	},
+	"item": [
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/api/v1/users",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/users/2",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"asd@email.com\",\r\n    \"password\": \"MyPassword\",\r\n    \"role\": \"customer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/api/v1/users",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"New Product\",\r\n    \"Price\": 1209,\r\n    \"Image\": \"http://placeimg.com/640/480\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/api/v1/users/1212",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"1212"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Partial User",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"NotEmail@email.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/api/v1/users/5",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"New Product\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/api/v1/users/5",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

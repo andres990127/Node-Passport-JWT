@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "7071cac8-da3c-4f4d-8a63-4f898feaa390",
+		"name": "Categories",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14036679"
+	},
+	"item": [
+		{
+			"name": "Get Categories",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjcsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTY3MzEwOTkxNX0.XAY1qddEls9ckoiov6bwDtyQ9i4SuYdTvUWxwaxRTXM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/api/v1/categories",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/api/v1/categories/2",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjcsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTY3MzEwOTkxNX0.XAY1qddEls9ckoiov6bwDtyQ9i4SuYdTvUWxwaxRTXM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Category 7\",\r\n    \"image\": \"http://placeimg.com/640/480\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/api/v1/categories",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Category",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"New Product\",\r\n    \"Price\": 1209,\r\n    \"Image\": \"http://placeimg.com/640/480\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/api/v1/categories/1212",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						"1212"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Partial Category",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"NotEmail@email.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/api/v1/categories/5",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"New Product\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/api/v1/categories/5",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

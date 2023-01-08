@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "76c60d4b-4e56-4562-bcd9-cfd0d3b2cb16",
+		"name": "Others",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14036679"
+	},
+	"item": [
+		{
+			"name": "nueva-ruta",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api",
+						"value": "clave_secreta",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/nueva-ruta",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"nueva-ruta"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

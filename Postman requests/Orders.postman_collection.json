@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "30a98ef7-9fa3-488f-a8c0-dec280739ff4",
+		"name": "Orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14036679"
+	},
+	"item": [
+		{
+			"name": "Get Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/api/v1/orders/1",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/users/2",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsInJvbGUiOiJjdXN0b21lciIsImlhdCI6MTY3MzExNDE0Nn0.-BMCDdKyXzhtBvcyOdljmmbGFetnz5cTcMnQF9iICbU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/api/v1/orders",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": 2,\r\n    \"productId\": 1,\r\n    \"amount\": \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}.preview.app.github.dev/api/v1/orders/add-item",
+					"protocol": "https",
+					"host": [
+						"andres990127-special-space-waddle-q4gpvq656xgcxrrx-{{PORT}}",
+						"preview",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"add-item"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
